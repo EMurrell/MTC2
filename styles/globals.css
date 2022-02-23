@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply w-10 h-10 mt-4 mx-9 md:w-12 md:h-12 lg:w-16 lg:h-16 text-neutral-400 md:mx-9 lg:mx-20;
+  }
+  .description {
+    @apply flex self-center mt-2 mb-8 text-sm font-body md:text-base lg:text-lg text-neutral-300 hover:shadow-bottom w-max;
+  }
+  .workcard {
+    @apply flex flex-col px-4 py-8 my-4 transition duration-300 ease-in-out transform bg-opacity-50 shadow-md cursor-pointer hover:scale-105 xl:mx-12 hover:text-highlight;
+  }
+}
