@@ -8,26 +8,29 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        bottom: "inset 0px -11px 0px   #Fe5000",
-        bottom2: "inset 0px -13px 0px   #Fe5000",
-        bottom3: "inset 0px -14px 0px   #Fe5000",
-        bottom4: "inset 0px -11px 0px   #525252",
+        bottom: "inset 0px -10px 0px   #ff2b00",
+        bottom2: "inset 0px -13px 0px   #ff2b00",
+        bottom3: "inset 0px -14px 0px   #ff2b00",
+        bottom4: "inset 0px -11px 0px   #ff2b00",
       },
       backgroundImage: {
-        hero: "url('/bluegray3.jpg')",
+        hero: "url('/darkbricks3.jpg')",
         quote: "url('/dots.svg)",
       },
       colors: {
-        highlight1: "#fe5000",
+        highlight1: "#ff2b00",
         highlight2: "#22d3ee",
         dark: "#45433e",
       },
       fontFamily: {
-        logo: ["Play"],
-        display: ["Poppins"],
-        body: ["Space Grotesk"],
+        logo: ["Roboto"],
+        display: ["Roboto"],
+        body: ["Merriweather"],
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
+  ],
 };

@@ -1,16 +1,17 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { Github, Devdotto, Twitter } from "@icons-pack/react-simple-icons";
 import { MailIcon } from "@heroicons/react/outline";
-import { Spiral as Hamburger } from "hamburger-react";
+import Hamburger from "hamburger-react";
 import { useState, useEffect } from "react";
 
 const links = [
-  { name: "About", to: "#About", id: 1 },
-  { name: "Pricing", to: "#Pricing", id: 2 },
-  { name: "FAQ", to: "#FAQ", id: 3 },
-  { name: "Contact", to: "#Contact", id: 4 },
+  { name: "ABOUT", to: "#Features", id: 1 },
+  { name: "TESTIMONIALS", to: "#Testimonial", id: 2 },
+  { name: "CONTACT", to: "#Contact", id: 4 },
 ];
 
 const itemVariants = {
@@ -40,7 +41,7 @@ export default function Nav() {
   const [animateNav, setAnimateNav] = useState(false);
   useEffect(() => {
     const listener = () => {
-      if (window.scrollY > 140) {
+      if (window.scrollY > 600) {
         setAnimateNav(true);
       } else setAnimateNav(false);
     };
@@ -53,19 +54,19 @@ export default function Nav() {
 
   return (
     <nav
-      className={`text-neutral-800 w-full flex backdrop-blur-sm justify-between  font-display  fixed z-50 transition ease-in-out duration-500 ${
+      className={`text-neutral-100 w-full flex  justify-between  font-display  fixed z-50 transition ease-in-out duration-500 ${
         animateNav && "shadow-xl "
       }`}
     >
       <div
         className={`flex w-screen py-4 bg-transparent   ${
           animateNav &&
-          "py-0  backdrop-blur-lg bg-neutral-300/20 trasition ease-in-out duration-500"
+          "py-0 text-black backdrop-blur-sm bg-neutral-300/70 trasition ease-in-out duration-500"
         } mx-auto   justify-between `}
       >
         <Link href="/">
-          <a className="inline-flex mx-4 my-4 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer font-logo md:text-3xl md:ml-8 lg:ml-16 ">
-            My Company
+          <a className="pr-12 mx-4 mt-2 text-2xl tracking-widest transition duration-100 ease-in-out transform cursor-pointer md:mt-8 font-logo md:text-3xl md:ml-8 lg:ml-16">
+            <Image alt="logo" src="/mtclong-red.png" width={195} height={45} />
           </a>
         </Link>
 
@@ -73,7 +74,7 @@ export default function Nav() {
         <AnimatePresence>
           {open && (
             <motion.aside
-              className="fixed top-0 right-0 h-screen bg-highlight1 md:hidden overflow"
+              className="fixed top-0 right-0 h-screen bg-neutral-600 md:hidden overflow"
               initial={{ width: 0 }}
               transition={{ type: "tween" }}
               animate={{
@@ -91,15 +92,20 @@ export default function Nav() {
                 exit="closed"
                 variants={sideVariants}
               >
-                <div className="pt-12 pb-16 tracking-widest border-b-2 font-logo border-neutral-100">
-                  My Company
+                <div className="pt-20 pb-2 border-neutral-100">
+                  <Image
+                    alt="logo"
+                    src="/mtclong-red.png"
+                    width={195}
+                    height={45}
+                  />
                 </div>
 
                 {links.map(({ name, to, id }) => (
                   <motion.a
                     key={id}
                     href={to}
-                    className="flex mt-16 transition duration-100 ease-in-out transform hover:shadow-bottom w-max "
+                    className="flex mt-16 transition duration-100 ease-in-out transform hover:shadow-bottom w-max text-highlight1"
                     variants={itemVariants}
                     aria-current={links.current ? "page" : undefined}
                     onClick={cycleOpen}
@@ -126,7 +132,7 @@ export default function Nav() {
             <a
               key={id}
               href={to}
-              className="mx-8 my-6 text-lg font-normal transition duration-100 ease-in-out transform lg:mx-12 9 md:text-xl hover:shadow-bottom "
+              className="pt-2 mx-8 my-8 text-lg font-normal transition duration-100 ease-in-out transform lg:mx-12 9 md:text-xl hover:shadow-bottom "
             >
               {name}
             </a>
