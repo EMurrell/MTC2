@@ -4,16 +4,16 @@ export default function Testimonials() {
   return (
     <section
       id="Testimonial"
-      className="py-10 mt-6 overflow-hidden tracking-tight md:py-12 font-display"
+      className="py-24 -mt-16 overflow-hidden tracking-tight bg-center bg-cover md:py-28 font-display bg-background2"
     >
       <div className="px-8 ">
         <div className="flex flex-col justify-center ">
-          <h1 className="py-4 text-2xl font-medium text-center md:text-3xl text-neutral-800">
+          <h1 className="py-4 text-2xl font-medium text-center text-white md:text-3xl">
             What Our Clients Say:
           </h1>
           <div className="flex self-center w-24 border-t-2 border-highlight1"></div>
           <blockquote className="mt-8">
-            <div className="max-w-3xl mx-auto text-base font-light leading-relaxed text-center font-body text-neutral-900 md:text-xl ">
+            <div className="max-w-3xl mx-auto text-base font-light leading-relaxed text-center text-white font-body md:text-xl ">
               <em>
                 &ldquo;I had an opening made in a brick wall to allow for a
                 patio door. The Wall was originally built in the 1950s so I
@@ -30,11 +30,11 @@ export default function Testimonials() {
             <footer className="mt-4">
               <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center mt-3 text-center">
-                  <p className="text-base font-medium font-body text-neutral-900">
+                  <p className="text-base font-medium text-white font-body">
                     David Lea
                   </p>
 
-                  <p className="text-base font-medium font-body text-neutral-600">
+                  <p className="text-base font-medium font-body text-neutral-400">
                     MTC Client
                   </p>
                 </div>

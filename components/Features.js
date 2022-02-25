@@ -29,7 +29,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="py-6">
                 <div className="flow-root px-10 pb-8 mx-6 bg-white shadow-lg h-60 shadow-neutral-500/50 lg:mx-0 md:mx-32 ">
-                  <h3 className="pt-10 text-2xl font-medium tracking-tight text-neutral-900 ">
+                  <h3 className="text-2xl font-medium tracking-tight underline pt-11 text-neutral-900 ">
                     {feature.name}
                   </h3>
                   <p className="mt-4 text-lg text-neutral-900 ">
