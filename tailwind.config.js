@@ -21,10 +21,8 @@ module.exports = {
       colors: {
         highlight1: "#ff2b00",
         highlight2: "#22d3ee",
-        dark: "#45433e",
       },
       fontFamily: {
-        logo: ["Roboto"],
         display: ["Roboto"],
         body: ["Merriweather"],
       },

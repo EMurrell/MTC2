@@ -86,7 +86,7 @@ export default function Nav() {
               }}
             >
               <motion.div
-                className="flex flex-col p-8 ml-4 text-2xl "
+                className="flex flex-col p-8 ml-4 text-2xl font-medium "
                 initial="closed"
                 animate="open"
                 exit="closed"
@@ -105,7 +105,7 @@ export default function Nav() {
                   <motion.a
                     key={id}
                     href={to}
-                    className="flex mt-16 transition duration-100 ease-in-out transform hover:shadow-bottom w-max text-highlight1"
+                    className="flex mt-20 transition duration-100 ease-in-out transform hover:shadow-bottom w-max text-highlight1"
                     variants={itemVariants}
                     aria-current={links.current ? "page" : undefined}
                     onClick={cycleOpen}

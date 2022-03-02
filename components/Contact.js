@@ -5,7 +5,7 @@ import {
   ArrowNarrowRightIcon,
   PhoneIcon,
 } from "@heroicons/react/outline";
-import FadeIn from "../animations/FadeIn";
+import DelayedFadeIn from "../animations/DelayedFadeIn";
 import FadeUp from "../animations/FadeUp";
 import { Framer, Nextdotjs, Tailwindcss } from "@icons-pack/react-simple-icons";
 
@@ -35,7 +35,7 @@ export default function Contact() {
             </a>
           </div>
         </FadeUp>
-        <FadeIn>
+        <DelayedFadeIn>
           <div className="flex flex-col text-lg font-light lg:text-xl font-body">
             <div className="flex flex-col mb-6 transition duration-300 ease-in-out transform cursor-pointer lg:mx-6 h-max w-max hover:shadow-bottom">
               <h2 className="flex flex-row w-max">Email: &nbsp;</h2>
@@ -51,7 +51,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </FadeIn>
+        </DelayedFadeIn>
       </div>
       <div className="flex flex-col justify-center py-8 text-lg text-center border-t border-neutral-400 lg:text-xl text-neutral-400">
         &copy; {getCurrentYear()} MTC All Rights Reserved
