@@ -19,18 +19,18 @@ export default function Header() {
     >
       <main className="flex flex-col justify-center h-screen pt-16 text-center pb-28 md:pb-16">
         <FadeUp>
-          <h2 className="flex flex-col pb-4 text-2xl font-medium md:text-3xl lg:text-4xl">
+          <h2 className="flex flex-col pb-2 text-2xl font-medium md:text-3xl lg:text-4xl">
             MASON&apos;S TOUCH CONSTRUCTION
           </h2>
         </FadeUp>
         <DelayedFadeIn>
-          <h1 className="flex justify-center pb-4 text-5xl font-semibold md:text-6xl lg:text-7xl">
+          <h1 className="flex justify-center py-2 text-5xl font-semibold leading-tight md:text-6xl lg:text-7xl">
             Masonry + Foundation Repair
           </h1>
         </DelayedFadeIn>
         <DelayedFadeIn>
           <Link href={"/#Contact"} passHref>
-            <button className="px-6 py-2 mt-2 mb-20 ml-1 text-xl font-normal text-white border-2 shadow-lg cursor-pointer border-highlight1 bg-highlight1 lg:px-10 lg:py-3 2xl:ml-2 lg:mt-4 lg:text-2xl shadow-neutral-600/30 hover:bg-transparent hover:text-highlight1">
+            <button className="px-6 py-2 mt-4 mb-20 ml-1 text-xl font-normal text-white border-2 shadow-lg cursor-pointer border-highlight1 bg-highlight1 lg:px-10 lg:py-3 md:mt-6 lg:text-2xl shadow-neutral-600/30 hover:bg-transparent hover:text-highlight1">
               Contact Us
             </button>
           </Link>

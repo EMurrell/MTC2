@@ -17,6 +17,7 @@ module.exports = {
         hero: "url('/darkbricks3.jpg')",
         background2: "url('/walldark2.jpg')",
         quote: "url('/dots.svg)",
+        blueprint: "url('/blueprint2.jpg')",
       },
       colors: {
         highlight1: "#ff2b00",

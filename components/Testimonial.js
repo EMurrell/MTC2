@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FadeUp from "../animations/FadeUp";
+import FadeRight from "../animations/FadeRight";
 
 export default function Testimonials() {
   return (
@@ -9,9 +10,11 @@ export default function Testimonials() {
     >
       <div className="px-8 ">
         <div className="flex flex-col justify-center ">
-          <h1 className="py-4 text-2xl font-medium text-center text-white md:text-3xl">
-            What Our Clients Say:
-          </h1>
+          <FadeRight>
+            <h1 className="py-4 text-2xl font-medium text-center text-white md:text-3xl">
+              What Our Clients Say:
+            </h1>
+          </FadeRight>
           <div className="flex self-center w-24 border-t-2 border-highlight1"></div>
 
           <blockquote className="mt-8">

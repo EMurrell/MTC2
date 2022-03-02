@@ -18,7 +18,7 @@ export default function Contact() {
       id="Contact"
       className="flex flex-col px-8 pt-10 xl:h-auto md:px-24 lg:px-52 bg-neutral-900 text-neutral-200 font-display "
     >
-      <div className="flex flex-col py-20 2xl:py-20 lg:flex-row ">
+      <div className="flex flex-col pt-12 pb-24 2xl:py-20 lg:flex-row ">
         <FadeUp>
           <h1 className="pr-2 text-3xl font-medium md:text-4xl lg:text-5xl lg:w-1/2">
             Mason&apos;s Touch Construction
