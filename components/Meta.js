@@ -8,6 +8,9 @@ export default function Meta() {
       <title>Mason&apos;s Touch Construction</title>
       <meta name="description" content="Masonry and Foundation Repair" />
       <link rel="icon" href="/favicon.ico" />
+      <meta property="og:image" content="/mtc-preview.jpg" />
+      <meta property="og:title" content="Mason's Touch Construction" />
+      <meta property="og:description" content="Masonry & Foundation Repair" />
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
