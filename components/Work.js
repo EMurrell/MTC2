@@ -29,7 +29,7 @@ export default function Work() {
         </FadeRight>
         <div className="self-center w-24 py-2 border-t-2 border-highlight1"></div>
         <DelayedFadeIn>
-          <p className="pb-4 text-xl text-center md:text-2xl">
+          <p className="pb-4 text-xl font-medium text-center md:text-2xl">
             We&apos;re passionate about our work, and it shows. Explore some of
             our recent projects.
           </p>
@@ -61,6 +61,12 @@ export default function Work() {
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
             <Image src="/wall500.jpg" alt="" width={350} height={350} />
+          </div>
+          <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
+            <Image src="/entrance500.jpg" alt="" width={350} height={350} />
+          </div>
+          <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
+            <Image src="/poolhouse500.jpg" alt="" width={350} height={350} />
           </div>
         </div>
       </div>
