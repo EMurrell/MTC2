@@ -48,25 +48,68 @@ export default function Work() {
       <div className="flex overflow-hidden" ref={emblaRef}>
         <div className="flex flex-row h-auto ">
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/stonework500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/stonework500.jpg"
+              alt="picture of stonework"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/demo500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/demo500.jpg"
+              alt="picture of demolition site"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/chimney500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/chimney500.jpg"
+              alt="picture of repaired chimney"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/interlock500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/interlock500.jpg"
+              alt="picture of interlock walkway"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/wall500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/wall500.jpg"
+              alt="picture of brickwork"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/entrance500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/entrance500.jpg"
+              alt="picture of entrance way"
+              width={350}
+              height={350}
+            />
           </div>
           <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
-            <Image src="/poolhouse500.jpg" alt="" width={350} height={350} />
+            <Image
+              src="/foundation500.jpg"
+              alt="picture of cracked foundation"
+              width={350}
+              height={350}
+            />
+          </div>
+          <div className="relative flex flex-shrink-0 w-4/5 m-1 md:w-auto ">
+            <Image
+              src="/poolhouse500.jpg"
+              alt="picture of stone shed"
+              width={350}
+              height={350}
+            />
           </div>
         </div>
       </div>

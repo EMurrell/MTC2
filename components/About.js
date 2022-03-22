@@ -19,8 +19,8 @@ export default function About() {
       <div className="flex flex-col justify-center py-6 text-xl text-center md:text-2xl lg:text-3xl">
         <DelayedFadeIn>
           <p className="py-4">
-            Specializing in Foundation Repair, Parging, Chimney Repair, Stone
-            Work and Brick Laying.
+            Specializing in Foundation Repair, Chimney Repair, Stone Work and
+            Brick Laying.
           </p>
 
           <p className="py-4">Family Owned and Operated.</p>
