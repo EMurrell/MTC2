@@ -54,7 +54,8 @@ export default function Contact() {
         </DelayedFadeIn>
       </div>
       <div className="flex flex-col justify-center py-8 text-lg text-center border-t border-neutral-400 lg:text-xl text-neutral-400">
-        &copy; {getCurrentYear()} MTC All Rights Reserved
+        &copy; {getCurrentYear()} MTC All Rights Reserved <br />
+        Powered by Trailbridge Web
       </div>
     </footer>
   );
