@@ -55,8 +55,15 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center py-8 text-lg text-center border-t border-neutral-400 lg:text-xl text-neutral-400">
         &copy; {getCurrentYear()} MTC All Rights Reserved <br />
-        Powered by Trailbridge Web
+        Website powered by{" "}
+        <a
+          className="italic hover:text-white"
+          href="https://trailbridgeweb.com"
+        >
+          Trailbridge Web
+        </a>
       </div>
     </footer>
   );
 }
+

@@ -34,9 +34,7 @@ export default function About() {
       </div>
 
       <div className="flex flex-col justify-center px-8 py-4 mt-8 text-lg font-normal text-center text-white border-4 shadow-lg bg-highlight1 place-self-center md:text-xl lg:text-2xl border-highlight1 shadow-neutral-900/70">
-        <h2>
-          We Offer Free Estimates and a Quality Guarantee On All Projects.
-        </h2>
+        <h2>We Offer a Quality Guarantee On All Projects.</h2>
       </div>
     </section>
   );
